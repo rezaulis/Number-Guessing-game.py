@@ -1,2 +1,24 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+#Number Guessing game
+import random
+
+print("WSNFKdnf")
+def number_guessing_game():
+    print("Hello and welcome to Number Guessing Game!!!")
+    print("Game rule: \nYou will enter a number from 1 to 100 and the program will tell you if you guessed the correct number")
+    number = random.randint(1, 100) 
+
+
+    while True:
+        try:
+            userInput = int(input("Enter your number: "))
+            if userInput > number:
+             print("Enter a smaller number")
+            elif userInput < number:
+                print("Enter a bigger number")
+            else:
+                print("You Win!!!")
+                break
+        except ValueError:
+            print("Please enter a valid number")
+        
+number_guessing_game()
