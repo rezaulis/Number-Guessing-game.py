@@ -1,12 +1,10 @@
 #Number Guessing game
 import random
 
-print("WSNFKdnf")
 def number_guessing_game():
     print("Hello and welcome to Number Guessing Game!!!")
     print("Game rule: \nYou will enter a number from 1 to 100 and the program will tell you if you guessed the correct number")
     number = random.randint(1, 100) 
-
 
     while True:
         try:
